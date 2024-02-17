@@ -24,7 +24,7 @@ const Clock = ({item, deleteItem}: Props) => {
                 minute: minute,
                 second: second
             })
-        
+        return () => clearInterval(intervalId);
         }, 1000)
     })
     

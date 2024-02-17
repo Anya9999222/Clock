@@ -28,7 +28,7 @@ function App() {
     <div className='main'>
       <Form onSubmit={onChangeHandler}/>
       <div className='clocks'>
-          {time.map(i => <Clock key={Math.random()} item={i} deleteItem={() => deleteItem(i.id)}/>)}
+          {time.map(i => <Clock key={i.id} item={i} deleteItem={() => deleteItem(i.id)}/>)}
       </div>
       
     </div>
